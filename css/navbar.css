@@ -1,0 +1,24 @@
+.navabar-outer {
+  height: 135px;
+  border-bottom: 3px solid #8080805c !important;
+  margin-top: 15px;
+}
+.fs5 {
+  font-size: 1.1rem;
+}
+@media (max-width: 992px) {
+  .navabar-outer {
+    height: auto;
+  }
+}
+@media (min-width: 1400px) {
+  .container-md {
+    max-width: 1700px !important;
+  }
+}
+.request-btn {
+  background-color: #c10230;
+  border-radius: 22px;
+  height: 35px;
+  width: 160px;
+}

@@ -1,0 +1,16 @@
+.glide__slide img{
+  max-width: 100%;
+  min-height: auto;
+  margin: auto;
+}
+
+.glide__slide{
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.glide__slide--active{
+  transform: scale(1.8);
+}
+.glide__slides{
+  overflow: visible !important;
+}

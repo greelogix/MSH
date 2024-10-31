@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/navbar.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- glide carousal links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+      integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+      integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+    
+    <title>Manhattan</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xxl bg-body-tertiary navabar-outer">
+      <div class="container-md">
+        <a class="navbar-brand ms-2 ms-sm-5" href="./index.html"
+          ><img src="./images/002 1.png" width="180px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item px-2">
+              <a
+                class="nav-link fw-semibold text-black fs5"
+                aria-current="page"
+                href="./pages/our-programs.html"
+                >Programs</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a
+                class="nav-link fw-semibold text-black fs5"
+                href="./pages/msh-locations.html"
+                >Location</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a
+                class="nav-link fw-semibold text-black fs5"
+                href="./pages/admissions.html"
+                >Admissions</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a
+                class="nav-link fw-semibold text-black fs5"
+                href="./pages/reggio-emillia.html"
+                >Reggio Emillia</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a
+                class="nav-link fw-semibold text-black fs5"
+                href="./pages/meet-team.html"
+                >Our Team</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a
+                class="nav-link fw-semibold text-black fs5"
+                href="./pages/faq.html"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a
+                class="nav-link fw-semibold text-black fs5"
+                href="./pages/contact-us.html"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <div
+                class="request-btn d-flex justify-content-center align-items-center"
+              >
+                <a
+                  class="nav-link fw-semibold text-black text-white fs5"
+                  href="#"
+                  >Request a Tour</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="d-flex justify-content-center hero-container-color pt-0 pt-sm-0"
+    >
+      <div class="hero-container row my-3 my-sm-5 py-1 py-sm-5">
+        <div class="col-md-6 col-12 mb-4 mb-md-0">
+          <p class="display-1 bolder grayish">Manhattan Schoolhouse</p>
+          <p class="display-6 bolder yellowish">
+            A place to Explore,Imagine & Create
+          </p>
+          <p class="fs-4 fw-medium light-grayish">
+            We warmly welcome families to a Reggio Emilia inspired school, where
+            every child’s intellectual, emotional, social, and moral potential
+            is thoughtfully cultivated in an environment of trust and
+            partnership between parents, educators, children, and the community
+          </p>
+          <div class="pt-3">
+            <a
+              class="admission-btn fw-semibold text-black text-white display-6 bolder px-5 py-1"
+              href="#"
+              >Admissions</a
+            >
+          </div>
+        </div>
+        <div
+          class="banner-container col-md-6 col-12 d-flex align-items-end justify-content-center"
+        >
+          <img src="./images/098 1.png" width="100%" height="auto" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="d-flex d-none justify-content-center">
+      <div class="px-4" style="width: 69vw">
+        <img src="./images/Vector.png" width="100%" height="auto" alt="" />
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center pt-5 pb-3 my-5">
+      <div
+        class="hero-container d-flex flex-column justify-content-center mb-5"
+      >
+        <div class="d-flex justify-content-center">
+          <!-- <div class="d-flex align-items-center col-3 d-none d-xl-block">
+            <img
+              class="parent-img-1"
+              src="./images/0.png"
+              width="100%"
+              height="auto"
+              alt=""
+            />
+          </div> -->
+          <div
+            class="text-center d-flex flex-column align-items-center justify-content-center"
+          >
+            <p class="display-1 bolder grayish">
+              Discover <span class="redish">Our Story</span>
+            </p>
+            <div
+              class="discover-container-text d-flex justify-content-center py-3"
+            >
+              <p class="fs-4 fw-light text-black">
+                Manhattan Schoolhouse was created as a place where children are
+                free to discover their unique creativity and develop their
+                imagination in a safe, loving, respectful, and nurturing
+                environment that prepares them for tomorrow’s world, today
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="responsive-video-container">
+          <video controls>
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div> -->
+        <div class="col-12">
+          <video
+            id="my-video"
+            class="video-js vjs-theme-forest"
+            controls
+            preload="auto"
+            width="100%"
+            height="auto"
+            poster="./images/top-video-home.png"
+            data-setup="{}"
+          >
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="../../Movies & Series/The.Rings.of.Power.S02E08.1080p.10bit.WEB-DL.HIN-ENG.5.1.x265.ESub-KatmovieHD.mkv"
+              type="video/webm"
+            />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider
+              upgrading to a web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="d-flex flex-column pb-3 mx-auto">
+      <div class="d-flex">
+        <div class="d-flex align-items-center col-3">
+          <img
+            class="parent-img-1"
+            src="./images/0.png"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+        </div>
+        <div
+          class="text-center d-flex flex-column align-items-center justify-content-center col-lg-6"
+        >
+          <p class="display-1 bolder grayish">
+            Discover <span class="redish">Our Story</span>
+          </p>
+          <div
+            class="discover-container-text d-flex justify-content-center py-3"
+          >
+            <p class="fs-4 fw-light text-black">
+              Manhattan Schoolhouse was created as a place where children are
+              free to discover their unique creativity and develop their
+              imagination in a safe, loving, respectful, and nurturing
+              environment that prepares them for tomorrow’s world, today
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="responsive-video-container">
+          <video controls>
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="d-flex justify-content-center py-3 pt-4">
+      <div
+        class="hero-container d-flex flex-column justify-content-center my-5 pb-5"
+      >
+        <div class="row pt-4">
+          <div class="d-flex justify-content-between my-5gap-4 px-4">
+            <div class="d-flex justify-content-center align-items-end">
+              <img
+                class="parent-img-1"
+                src="./images/1.psd.png"
+                width="100%"
+                height="auto"
+                alt=""
+              />
+            </div>
+            <div
+              class="text-center d-flex flex-column align-items-center justify-content-center"
+            >
+              <p class="display-1 bolder grayish">Programs</p>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-end invisible"
+            >
+              <img
+                class="parent-img-1"
+                src="./images/1.psd.png"
+                width="100%"
+                height="auto"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="discover-container-text d-flex mx-auto justify-content-center py-3"
+        >
+          <p class="fs-4 fw-light text-black text-center">
+            We create culturally rich and inspiring child-centered learning
+            environments at Manhattan Schoolhouse. Our full-time, extended hour,
+            and part-time programs are all based on the belief that every
+            interaction with each child is important.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-8 col-10">
+            <div class="d-flex flex-column">
+              <div class="programs-main-image-container border-radius">
+                <img
+                  src="./images/Frame 1.png"
+                  class="programs-main-image"
+                  width="100%"
+                  height="100%"
+                  alt=""
+                />
+              </div>
+              <div
+                class="programs-main-bottom-container mt-4 py-2 d-flex flex-column justify-content-center align-items-center mb-5"
+              >
+                <div class="display-6 fw-semibold">DayCare</div>
+
+                <div class="fs-5 fw-medium text-center">
+                  Infants, Toddlers, and Two’s
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-8 col-10">
+            <div class="d-flex flex-column">
+              <div class="programs-main-image-container border-radius">
+                <img
+                  src="./images/Frame 3.png"
+                  class="programs-main-image"
+                  width="100%"
+                  height="100%"
+                  alt=""
+                />
+              </div>
+              <div
+                class="programs-main-bottom-container mt-4 py-2 d-flex flex-column justify-content-center align-items-center bg-yellowish mb-5"
+              >
+                <div class="display-6 fw-semibold">Preschool</div>
+
+                <div class="fs-5 fw-medium text-center">3-k and Pre-K</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-8 col-10">
+            <div class="d-flex flex-column">
+              <div class="programs-main-image-container border-radius">
+                <img
+                  src="./images/Frame 4.png"
+                  class="programs-main-image"
+                  width="100%"
+                  height="100%"
+                  alt=""
+                />
+              </div>
+              <div
+                class="programs-main-bottom-container mt-4 py-2 d-flex flex-column justify-content-center align-items-center bg-yellowish mb-5"
+              >
+                <div class="display-6 fw-semibold">Wrap Around</div>
+
+                <div class="fs-5 fw-medium text-center">3-k and Pre-K</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center pt-4">
+      <!-- <div
+        class="hero-container d-flex flex-column justify-content-center pb-2"
+      >
+        <div
+          class="text-center d-flex flex-column align-items-center justify-content-center"
+        >
+          <p class="display-1 bolder grayish">
+            Why <span class="yellowish">MSH ?</span>
+          </p>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="row justify-content-center pt-4">
+      <div
+        class="d-flex hero-container justify-content-md-between justify-content-center my-5gap-4 px-4"
+      >
+        <div class="d-none d-md-block">
+          <img
+            class="parent-img-1 invisible"
+            src="./images/1.psd.png"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+        </div>
+        <!-- <div
+          class="text-center d-flex flex-column align-items-center justify-content-center"
+        >
+          <p class="display-1 bolder grayish">Programs</p>
+        </div> -->
+        <div
+          class="text-center d-flex flex-column align-items-center justify-content-center"
+        >
+          <p class="display-1 bolder grayish">
+            Why <span class="yellowish">MSH ?</span>
+          </p>
+        </div>
+        <div class="d-none d-md-block">
+          <img
+            class="parent-img-1"
+            src="./images/toddler.psd.png"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-4">
+      <di class="col-11 col-md-8">
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper p-4">
+                <div class="row overflow-hidden slider-row">
+                  <div class="col">
+                    <img
+                      src="./images/Frame 7.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col">
+                    <img
+                      src="./images/Clip path group.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <a href="#carousel__slide3" class="carousel__prev"
+                  >Go to last slide</a
+                >
+                <a href="#carousel__slide2" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper p-4">
+                <div class="row overflow-hidden slider-row">
+                  <div class="col">
+                    <img
+                      src="./images/Frame 7.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col">
+                    <img
+                      src="./images/Clip path group.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <a href="#carousel__slide1" class="carousel__prev"
+                  >Go to last slide</a
+                >
+                <a href="#carousel__slide3" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper p-4">
+                <div class="row overflow-hidden slider-row">
+                  <div class="col">
+                    <img
+                      src="./images/Frame 7.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col">
+                    <img
+                      src="./images/Clip path group.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <a href="#carousel__slide2" class="carousel__prev"
+                  >Go to last slide</a
+                >
+                <a href="#carousel__slide1" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <!-- <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide1" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide3" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li> -->
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button"
+                  >Go to slide 1</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button"
+                  >Go to slide 2</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button"
+                  >Go to slide 3</a
+                >
+              </li>
+              <!-- <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button"
+                  >Go to slide 4</a
+                >
+              </li> -->
+            </ol>
+          </aside>
+        </section>
+      </di>
+    </div>
+    <div
+      class="row d-flex justify-content-center fs-4 fw-semibold pt-3 pb-4 px-2 text-center"
+    >
+      Dynamic Learning Through Creative Exploration
+    </div>
+
+    <!-- <div class="d-flex justify-content-end py-3 pt-4 hero-container-color">
+      <div
+        class="hero-container d-flex justify-content-center my-5 pb-5"
+      >
+        <div
+          class="text-center d-flex flex-column align-items-center gap-3 justify-content-center"
+        >
+          <p class="display-1 bolder grayish">Hear From The Parents</p>
+        </div>
+        <div>
+          <img
+            class="parent-img-1"
+            src="./images/6.psd.png"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+        </div>
+      </div>
+    </div> -->
+
+    <div class="row py-5 pt-4 hero-container-color">
+      <div class="col d-flex justify-content-center mt-5 gap-4 px-4">
+        <div class="justify-content-center align-items-end d-none d-md-flex">
+          <img
+            class="parent-img-1"
+            src="./images/Vector (4).png"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+        </div>
+        <div
+          class="text-center d-flex flex-column align-items-center gap-3 justify-content-center"
+        >
+          <p class="display-1 bolder grayish">Hear From The Parents</p>
+        </div>
+        <div class="d-none d-md-block">
+          <img
+            class="parent-img-1"
+            src="./images/6.psd.png"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="d-flex justify-content-center my-4">
+        <div class="col-sm-11 col-xxl-8 col-10">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li
+                  class="glide__slide bg-white p-xl-5 p-sm-4 p-3 rounded-4 shadow"
+                >
+                  <div class="d-flex justify-content-center mb-3">
+                    <i class="fa-solid fa-star color-pink"></i>
+                    <i class="fa-solid fa-star color-pink"></i>
+                    <i class="fa-solid fa-star color-pink"></i>
+                    <i class="fa-solid fa-star color-pink"></i>
+                    <i class="fa-solid fa-star color-black"></i>
+                  </div>
+                  <div class="my-4 descrip fw-medium">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is
+                  </div>
+                  <div class="p-name fw-bold">Parent Name - Street Name</div>
+                  <img class="coma-img" src="./images/Group 2.png" alt="" />
+                </li>
+                <li
+                  class="glide__slide bg-white p-xl-5 p-sm-4 p-3 rounded-4 shadow"
+                >
+                  <div class="d-flex justify-content-center b-3">
+                    <i class="fa-solid fa-star color-pink"></i>
+                    <i class="fa-solid fa-star color-pink"></i>
+                    <i class="fa-solid fa-star color-black"></i>
+                    <i class="fa-solid fa-star color-black"></i>
+                    <i class="fa-solid fa-star color-black"></i>
+                  </div>
+                  <div class="my-4 descrip fw-medium">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is
+                  </div>
+                  <div class="p-name fw-bold">Parent Name - Street Name</div>
+                  <img class="coma-img" src="./images/Group 2.png" alt="" />
+                </li>
+                <li
+                  class="glide__slide bg-white p-xl-5 p-sm-4 p-3 rounded-4 shadow"
+                >
+                  <div class="d-flex justify-content-center mb-3">
+                    <i class="fa-solid fa-star color-pink"></i>
+                    <i class="fa-solid fa-star color-black"></i>
+                    <i class="fa-solid fa-star color-black"></i>
+                    <i class="fa-solid fa-star color-black"></i>
+                    <i class="fa-solid fa-star color-black"></i>
+                  </div>
+                  <div class="my-4 descrip fw-medium">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is
+                  </div>
+                  <div class="p-name fw-bold">Parent Name - Street Name</div>
+                  <img class="coma-img" src="./images/Group 2.png" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button
+                class="glide__arrow glide__arrow--left"
+                style="
+                  border-radius: 50%;
+                  background-color: rgba(193, 2, 48, 1);
+                  color: white;
+                "
+                data-glide-dir="<"
+              >
+                <img src="./images/Vector (8).png" alt="" />
+              </button>
+              <button
+                class="glide__arrow glide__arrow--right"
+                data-glide-dir=">"
+                style="
+                  border-radius: 50%;
+                  background-color: rgba(193, 2, 48, 1);
+                  color: white;
+                "
+              >
+                <img src="./images/Vector (7).png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="position: relative">
+      <div class="prent-container pt-2">
+        <div class="d-flex row justify-content-center px-4">
+          <div
+            class="px-2 col-3 parent-img-1 d-flex justify-content-center align-items-center"
+          >
+            <img
+              class="p"
+              src="./images/small kid run.psd.png"
+              width="100%"
+              height="auto"
+              alt=""
+            />
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img
+              src="images/Vector (6).png"
+              width="100%"
+              height="auto"
+              alt=""
+            />
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <img
+              class="parent-img-3"
+              src="./images/bagpack ones 02.PSD.png"
+              width="100%"
+              height="auto"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center pb-3">
+        <div class="hero-container d-flex flex-column justify-content-center">
+          <div
+            class="text-center d-flex flex-column align-items-center justify-content-center"
+          >
+            <p class="display-1 bolder grayish">
+              Where <span class="redish">To Find Us</span>
+            </p>
+          </div>
+
+          <!-- <div class="responsive-video-container">
+            <video controls>
+              <source
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div> -->
+          <div class="col-12">
+            <video
+              id="my-video"
+              class="video-js vjs-theme-forest"
+              controls
+              preload="auto"
+              width="100%"
+              height="auto"
+              poster="./images/home-video-top.png"
+              data-setup="{}"
+            >
+              <source
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="../../Movies & Series/The.Rings.of.Power.S02E08.1080p.10bit.WEB-DL.HIN-ENG.5.1.x265.ESub-KatmovieHD.mkv"
+                type="video/webm"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+
+          <div
+            class="text-center d-flex flex-column align-items-center justify-content-center"
+          >
+            <div
+              class="discover-container-text d-flex justify-content-center py-3"
+            >
+              <p class="fs-3 fw-light text-black">
+                With four locations in the Upper East Side and one in Chelsea,
+                we maintain a low teacher-to-child ratio that ensures each child
+                gets the attention they need.
+              </p>
+            </div>
+          </div>
+          <a href="#" class="redish fs-4 text-center">Choose Your MSH</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center py-3 pt-4 flex-column">
+      <div class="">
+        <img src="./images/hero2.png" width="100%" alt="" />
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center py-3 pt-4">
+      <div
+        class="hero-container d-flex align-items-center justify-content-center flex-column flex-sm-row"
+      >
+        <a href="#" class="redish fs-4 text-center decoration-none"
+          >Parent Portal
+        </a>
+        <span class="redish fs-2 text-center px-sm-2 px-0 d-none d-sm-block">
+          |
+        </span>
+        <a href="#" class="redish fs-4 text-center decoration-none"
+          >Careers at MSH
+        </a>
+        <span class="redish fs-2 text-center px-sm-2 px-0 d-none d-sm-block">
+          |
+        </span>
+        <a href="#" class="redish fs-4 text-center decoration-none"
+          >School Calanders
+        </a>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center bg-redish">
+      <div class="d-flex align-items-center justify-content-center my-5">
+        <a href="#" class="redish fs-4 text-center decoration-none me-4">
+          <div class="logo-bg">
+            <i class="fa-brands fa-facebook-f" style="font-size: 37px"></i>
+          </div>
+        </a>
+
+        <a href="#" class="redish fs-4 text-center decoration-none">
+          <div class="logo-bg">
+            <i class="fa-brands fa-instagram" style="font-size: 40px"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+      integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new Glide(".glide").mount();
+    </script>
+    <script>
+      var glide = new Glide(".glide", {
+        type: "carousel",
+        perView: 3,
+        focusAt: "center",
+        breakpoints: {
+          800: {
+            perView: 1,
+          },
+          480: {
+            perView: 1,
+          },
+        },
+      });
+
+      glide.mount();
+    </script>
+  </body>
+</html>
