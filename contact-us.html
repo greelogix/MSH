@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -26,8 +26,8 @@
   <body>
     <nav class="navbar navbar-expand-xxl bg-body-tertiary navabar-outer">
       <div class="container-md">
-        <a class="navbar-brand ms-2 ms-sm-5" href="/index.html"
-          ><img src="../images/002 1.png" width="180px" alt=""
+        <a class="navbar-brand ms-2 ms-sm-5" href="./index.html"
+          ><img src="./images/002 1.png" width="180px" alt=""
         /></a>
         <button
           class="navbar-toggler"
@@ -107,16 +107,27 @@
         </div>
       </div>
     </nav>
+
     <div class="d-flex justify-content-center mb-5 py-sm-3 py-4">
       <div
         class="hero-container d-flex flex-column justify-content-center my-2 my-sm-4 pt-sm-5 pt-2"
       >
         <div
-          class="text-center d-flex flex-column align-items-center justify-content-center"
+          class="text-center d-flex flex-column align-items-center justify-content-center position-relative"
         >
-          <p class="display-1 bolder grayish">
+          <img
+            src="./images/contact-vector-left.png"
+            class="contact-vector-left"
+            alt=""
+          />
+          <p class="location-head bolder grayish">
             Contact <span class="redish">Us</span>
           </p>
+          <img
+            src="./images/contact-vector-right.png"
+            class="contact-vector-right"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -129,11 +140,8 @@
           <form
             class="col-12 col-md-11 d-flex contact-container-inner flex-column gap-3 my-5 overflow-hidden p-4"
           >
-            <!-- <div
-              class="col-12 col-md-11 d-flex contact-container-inner flex-column gap-3 my-5 overflow-hidden p-4"
-            > -->
             <div class="mb-2">
-              <label for="name" class="form-label fs-5"
+              <label for="name" class="form-label contact-fs"
                 >Choose MSH Location</label
               >
               <div
@@ -153,7 +161,9 @@
                       autocomplete="off"
                       checked
                     />
-                    <label class="btn btn-outline-primary fs-5" for="btnradio1"
+                    <label
+                      class="btn btn-outline-primary contact-fs"
+                      for="btnradio1"
                       >1624 First Avenue</label
                     >
 
@@ -164,7 +174,9 @@
                       id="btnradio2"
                       autocomplete="off"
                     />
-                    <label class="btn btn-outline-primary fs-5" for="btnradio2"
+                    <label
+                      class="btn btn-outline-primary contact-fs"
+                      for="btnradio2"
                       >1616 First Avenue</label
                     >
 
@@ -175,7 +187,9 @@
                       id="btnradio3"
                       autocomplete="off"
                     />
-                    <label class="btn btn-outline-primary fs-5" for="btnradio3"
+                    <label
+                      class="btn btn-outline-primary contact-fs"
+                      for="btnradio3"
                       >1456 First Avenue</label
                     >
 
@@ -186,7 +200,9 @@
                       id="btnradio4"
                       autocomplete="off"
                     />
-                    <label class="btn btn-outline-primary fs-5" for="btnradio4"
+                    <label
+                      class="btn btn-outline-primary contact-fs"
+                      for="btnradio4"
                       >507 West 28th Street
                     </label>
 
@@ -197,7 +213,9 @@
                       id="btnradio5"
                       autocomplete="off"
                     />
-                    <label class="btn btn-outline-primary fs-5" for="btnradio5"
+                    <label
+                      class="btn btn-outline-primary contact-fs"
+                      for="btnradio5"
                       >1538 Second Avenue</label
                     >
                   </div>
@@ -206,12 +224,12 @@
                 <div
                   class="col-12 col-sm-1 d-flex justify-content-end order-0 order-sm-1"
                 >
-                  <div><img src="../images/Group 6.png" alt="" /></div>
+                  <div><img src="./images/Group 6.png" alt="" /></div>
                 </div>
               </div>
             </div>
             <div class="mb-2">
-              <label for="name" class="form-label fs-5">Name</label>
+              <label for="name" class="form-label contact-fs">Name</label>
               <input
                 name="name"
                 class="form-control shadow p-3"
@@ -220,7 +238,9 @@
               />
             </div>
             <div class="mb-2">
-              <label for="email" class="form-label fs-5">Email Address</label>
+              <label for="email" class="form-label contact-fs"
+                >Email Address</label
+              >
               <input
                 type="email"
                 name="email"
@@ -230,7 +250,7 @@
               />
             </div>
             <div class="mb-2">
-              <label for="subject" class="form-label fs-5">Subject</label>
+              <label for="subject" class="form-label contact-fs">Subject</label>
               <input
                 name="subject"
                 class="form-control shadow p-3"
@@ -239,7 +259,9 @@
               />
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label fs-5"
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label contact-fs"
                 >Message</label
               >
               <textarea
@@ -251,7 +273,7 @@
             <div>
               <button
                 type="submit"
-                class="btn btn-primary bg-redish border-0 rounded-1 px-3 fs-5"
+                class="btn btn-primary bg-redish border-0 rounded-1 px-3 contact-fs"
               >
                 SUBMIT
               </button>
@@ -266,19 +288,19 @@
       <div
         class="hero-container d-flex align-items-center justify-content-center flex-column flex-sm-row"
       >
-        <a href="#" class="redish fs-4 text-center decoration-none"
+        <a href="#" class="redish page-down-link text-center decoration-none"
           >Parent Portal
         </a>
         <span class="redish fs-2 text-center px-sm-2 px-0 d-none d-sm-block">
           |
         </span>
-        <a href="#" class="redish fs-4 text-center decoration-none"
+        <a href="#" class="redish page-down-link text-center decoration-none"
           >Careers at MSH
         </a>
         <span class="redish fs-2 text-center px-sm-2 px-0 d-none d-sm-block">
           |
         </span>
-        <a href="#" class="redish fs-4 text-center decoration-none"
+        <a href="#" class="redish page-down-link text-center decoration-none"
           >School Calanders
         </a>
       </div>

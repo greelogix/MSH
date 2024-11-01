@@ -1,7 +1,9 @@
 /* .//////////////////////////////////// */
 /* ............Navbar CSS................. */
 /* .//////////////////////////////////// */
-
+.page-down-link {
+  font-size: clamp(17px, 5vw, 24px);
+}
 .navabar-outer {
   height: 135px;
   border-bottom: 3px solid #8080805c !important;
@@ -25,6 +27,11 @@
 @media (min-width: 1400px) {
   .container-md {
     max-width: 1700px !important;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-width: 150px;
   }
 }
 .request-btn {
@@ -398,12 +405,16 @@ li {
 .parent-img-1 {
   max-width: 320px;
   max-height: 280px;
+  margin-left: 2vw;
 }
-.parent-img-3 {
+/* .parent-img-3 {
   max-width: 313px;
   max-height: 320px;
+} */
+.parent-img-3 {
+  max-width: 219px;
+  max-height: 260px;
 }
-
 .prent-container .row {
   --bs-gutter-x: 0;
 }
@@ -659,6 +670,9 @@ li {
 .emillia-container {
   width: 50%;
 }
+.emillia-down-head {
+  font-size: clamp(19px, 5vw, 40px);
+}
 .emillia-fs {
   font-size: clamp(14px, 2vw, 22px);
 }
@@ -702,13 +716,21 @@ li {
 .location-fs p {
   margin-bottom: 0px !important;
 }
-
+.location-head {
+  font-size: clamp(35px, 5vw, 80px);
+}
+.location-head-sub {
+  font-size: clamp(28px, 5vw, 55px);
+}
+.location-fs-head {
+  font-size: clamp(20px, 2vw, 40px);
+}
 .location-container {
   width: 65%;
 }
 
 .location-border {
-  border: 7px solid #c10230;
+  border: 5px solid #c10230;
 }
 
 @media (min-width: 768px) {
@@ -752,6 +774,13 @@ li {
 .program-fs-head {
   font-size: clamp(18px, 2vw, 28px);
 }
+.program-fs-head-three {
+  font-size: clamp(13px, 2vw, 24px);
+}
+
+.program-fs-head-two {
+  font-size: clamp(14px, 2vw, 28px);
+}
 .bg-litegray {
   background-color: #d3d3d345;
 }
@@ -772,6 +801,12 @@ li {
 @media (min-width: 1280px) {
   .program-top-banner {
     min-width: 375px;
+  }
+}
+
+@media (max-width: 768px) {
+  .programs-img-container img {
+    max-width: 250px !important;
   }
 }
 
@@ -837,8 +872,11 @@ textarea {
   }
 }
 
+.contact-fs {
+  font-size: clamp(18px, 2vw, 20px);
+}
 /* .//////////////////////////////////// */
-/* .......FAQ PAge CSS............ */
+/* .......FAQ Page CSS............ */
 /* .//////////////////////////////////// */
 
 .faq-container {
@@ -880,6 +918,9 @@ textarea {
 .accordion-item {
   border-radius: 0.5rem !important;
   overflow: hidden !important;
+}
+.faq-fs {
+  font-size: clamp(14px, 2vw, 19px);
 }
 @media (max-width: 1500px) {
   .faq-container {
@@ -959,6 +1000,9 @@ textarea {
 .admission-info-container {
   width: 100% !important;
 }
+.admission-fs-head {
+  font-size: clamp(25px, 5vw, 40px);
+}
 @media (max-width: 768px) {
   .admission-info-container {
     width: 85% !important;
@@ -991,4 +1035,157 @@ textarea {
   overflow: hidden;
   width: 80vw;
   height: 40vw;
+}
+
+.home-descrip-fs {
+  font-size: clamp(18px, 2vw, 24px);
+}
+.home-descrip-fs {
+  font-size: clamp(18px, 2vw, 24px);
+}
+.home-fs-head-three {
+  font-size: clamp(13px, 5vw, 24px);
+}
+.home-fs-head {
+  font-size: clamp(18px, 5vw, 28px);
+}
+
+/* ////////////////////////////////// */
+/* vectors css  */
+/* ////////////////////////////////////////////// */
+.discover-outer {
+  position: relative;
+  margin-top: 200px;
+}
+
+.left-vector-discover {
+  position: absolute;
+  left: 3vw;
+  top: 20%;
+  height: 90%;
+  max-width: 100%;
+  top: 14vh;
+}
+.program-container {
+  width: 90%;
+}
+.right-vector-msh {
+  position: absolute;
+  right: 10vw;
+  top: 24vh;
+  max-width: 100%;
+  height: 90%;
+  transition: all 0.3s ease;
+}
+.testimonial-bottom-vector {
+  position: absolute;
+  left: 24vw;
+  bottom: 0;
+  height: 40%;
+  /* max-width: 100%; */
+  top: 34vh;
+}
+.top-vector-discover {
+  position: absolute;
+  top: -25%;
+  width: 59vw;
+  left: 15vw;
+}
+.program-vector-curve {
+  position: absolute;
+  top: 27vh;
+  width: 78vw;
+  left: 2vw;
+  height: 90%;
+}
+.baby-progr {
+  position: absolute;
+  top: 3vh;
+  width: 200px;
+  left: 0vw;
+}
+
+@media (max-width: 1300px) {
+  .discover-outer {
+    margin-top: 100px !important;
+  }
+  .top-vector-discover {
+    top: -18% !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .discover-outer {
+    margin-top: 0px !important;
+  }
+  .discover-img {
+    display: none;
+  }
+  .top-vector-discover {
+    display: none;
+  }
+  .left-vector-discover {
+    display: none;
+  }
+  .program-vector-curve {
+    display: none;
+  }
+  .baby-progr {
+    display: none;
+  }
+  .right-vector-msh {
+    display: none;
+  }
+  .testimonial-bottom-vector {
+    display: none;
+  }
+  .parent-img-1 {
+    display: none;
+  }
+}
+
+/* .//////////////// */
+/* FAQ PAge Vector */
+/* ///////////////// */
+.faq-vector-left {
+  position: absolute;
+  right: 104%;
+  top: 28px;
+  width: 39vw;
+}
+.faq-vector-right {
+  position: absolute;
+  left: 104%;
+  top: -60%;
+  width: 27vw;
+}
+@media (max-width: 600px) {
+  .faq-vector-left {
+    width: 33vw !important;
+  }
+  .faq-vector-right {
+    width: 33vw !important;
+    top: -33px !important;
+  }
+}
+
+/* .//////////////// */
+/* Contact Us PAge Vector */
+/* ///////////////// */
+.contact-vector-left {
+  position: absolute;
+  right: 104%;
+  top: 44px;
+  width: 26vw;
+}
+.contact-vector-right {
+  position: absolute;
+  left: 102%;
+  top: -58%;
+  width: 20vw;
+}
+@media (max-width: 600px) {
+  .contact-vector-right {
+    top: -8px !important;
+  }
 }
