@@ -167,7 +167,7 @@
 
 /* ............Secons Carousal's CSS ................ */
 
-@keyframes tonext {
+/* @keyframes tonext {
   75% {
     left: 0;
   }
@@ -214,7 +214,7 @@
 
 * {
   box-sizing: border-box;
-  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-color: transparent transparent;  
   scrollbar-width: 0px;
 }
 
@@ -244,8 +244,7 @@ li {
 
 .carousel {
   position: relative;
-  padding-top: 53%;
-  filter: drop-shadow(0 0 10px #0003);
+   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
 }
 
@@ -261,22 +260,17 @@ li {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   border-radius: 50px;
-  /* height: 70%; */
-}
+ }
 
 .carousel__slide {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  /* background-color: #f99; */
-  counter-increment: item;
+   counter-increment: item;
   border-radius: 50px;
 }
 
-.carousel__slide:nth-child(even) {
-  /* background-color: #99f; */
-}
-
+ 
 .carousel__slide:before {
   content: counter(item);
   position: absolute;
@@ -358,7 +352,11 @@ li {
   transform: translateY(-50%);
   border-radius: 50%;
   font-size: 0;
-  outline: 0;
+ }
+
+.carousel::before,
+.carousel__prev {
+  outline: 5px solid white;
 }
 
 .carousel::before,
@@ -388,20 +386,18 @@ li {
 
 .carousel::before {
   background-image: url("../images/Vector (8).png");
-
-  /* background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E"); */
 }
 
 .carousel::after {
   background-image: url("../images/Vector (7).png");
-  /* background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E"); */
 }
 
 .carousel .row {
   --bs-gutter-x: 0;
-}
+} */
 
 /* Second Carosual's CSS Ends */
+
 .parent-img-1 {
   max-width: 320px;
   max-height: 280px;
@@ -707,6 +703,9 @@ li {
 /* .//////////////////////////////////// */
 /* .......MSH Locations CSS............ */
 /* .//////////////////////////////////// */
+.msh-location-banner {
+  margin-top: -55px;
+}
 .location-fs {
   font-size: clamp(14px, 2vw, 18px);
 }
@@ -717,7 +716,7 @@ li {
   margin-bottom: 0px !important;
 }
 .location-head {
-  font-size: clamp(35px, 5vw, 80px);
+  font-size: clamp(40px, 5vw, 120px);
 }
 .location-head-sub {
   font-size: clamp(28px, 5vw, 55px);
@@ -754,6 +753,12 @@ li {
 
   .location-left {
     order: 2;
+  }
+}
+
+@media (max-width: 442px) {
+  .msh-location-banner {
+    margin-top: 0px;
   }
 }
 
@@ -1059,12 +1064,18 @@ textarea {
 }
 
 .left-vector-discover {
-  position: absolute;
+  /* position: absolute;
   left: 3vw;
   top: 20%;
   height: 90%;
   max-width: 100%;
-  top: 14vh;
+  top: 14vh; */
+  position: absolute;
+  left: 3vw;
+  /* top: 20%; */
+  height: 82%;
+  max-width: 100%;
+  top: 17vh;
 }
 .program-container {
   width: 90%;
@@ -1098,10 +1109,20 @@ textarea {
   left: 2vw;
   height: 90%;
 }
-.baby-progr {
+.discover-img {
   position: absolute;
+  top: 6vh;
+  width: 17vw;
+  left: -9vw;
+}
+.baby-progr {
+  /* position: absolute;
   top: 3vh;
   width: 200px;
+  left: 0vw; */
+  position: absolute;
+  top: 3vh;
+  width: 161px;
   left: 0vw;
 }
 
@@ -1169,6 +1190,16 @@ textarea {
   }
 }
 
+@media (max-width: 410px) {
+  .faq-vector-left {
+    width: 28vw !important;
+  }
+  .faq-vector-right {
+    width: 29vw !important;
+    top: -18px !important;
+  }
+}
+
 /* .//////////////// */
 /* Contact Us PAge Vector */
 /* ///////////////// */
@@ -1187,5 +1218,215 @@ textarea {
 @media (max-width: 600px) {
   .contact-vector-right {
     top: -8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-vector-right {
+    top: -8px !important;
+  }
+  .contact-vector-left {
+    width: 18vw !important;
+  }
+}
+
+/* .//////////////// */
+/* Reggio Emillia Page Vector */
+/* ///////////////// */
+
+.top-reggio-vector {
+  position: absolute;
+  right: 34%;
+  top: -10vh;
+  width: 58vw;
+  height: 85vh;
+}
+.mid-reggio-vector {
+  position: absolute;
+  right: 8%;
+  top: 3vh;
+  width: 18%;
+  height: 100vh;
+}
+
+.bottom-reggio-vector {
+  position: absolute;
+  left: 8%;
+  top: 3vh;
+  width: 35%;
+  height: 144vh;
+}
+@media (max-width: 1500px) {
+  .top-reggio-vector {
+    width: 65vw !important;
+    height: 67vh;
+  }
+  .mid-reggio-vector {
+    right: 2%;
+    height: 111vh;
+  }
+  .bottom-reggio-vector {
+    position: absolute;
+    left: 2%;
+    top: 3vh;
+    width: 29%;
+    height: 170vh;
+  }
+}
+@media (max-width: 1350px) {
+  .bottom-reggio-vector {
+    position: absolute;
+    left: 2%;
+    top: 3vh;
+    width: 29%;
+    height: 153vh;
+  }
+}
+@media (max-width: 1300px) {
+  .top-reggio-vector {
+    width: 65vw !important;
+    height: 80vh;
+  }
+  .mid-reggio-vector {
+    right: 2%;
+    height: 106vh;
+  }
+}
+
+@media (max-width: 1150px) {
+  .mid-reggio-vector {
+    right: 2%;
+    height: 96vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .top-reggio-vector {
+    display: none;
+  }
+  .mid-reggio-vector {
+    display: none;
+  }
+  .bottom-reggio-vector {
+    display: none;
+  }
+}
+
+/* .//////////////// */
+/* Bootstrap Carousal CSS */
+/* ///////////////// */
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #0000004a;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+.carousel-indicators {
+  bottom: -55px;
+}
+.carousel-control-prev {
+  opacity: 1;
+  left: 0 !important;
+}
+.carousel-control-next {
+  right: 0 !important;
+  opacity: 1;
+}
+.boot-outer-next {
+  border: 3px solid #0000004a;
+  /* background-color: #c10230; */
+  width: 51px;
+  height: 70px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  right: -17px;
+  position: absolute;
+  /* outline: 3px solid white; */
+  border-radius: 50%;
+}
+.boot-next {
+  background-color: #c10230;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  right: -16px;
+  position: absolute;
+  /* outline: 3px solid white; */
+  border-radius: 38px;
+  outline: 7px solid white;
+}
+.boot-next img {
+  width: 20px;
+  /* outline: 3px solid white; */
+}
+.boot-prev {
+  background-color: #c10230;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  left: -20px;
+  position: absolute;
+  outline: 7px solid white;
+}
+.boot-prev img {
+  width: 20px;
+}
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #c10230 !important;
+}
+.carousel-control-next-icon {
+}
+.carousel-control-prev-icon {
+  left: 0px;
+  position: absolute;
+}
+@media (max-width: 567px) {
+  .carousel-indicators [data-bs-target] {
+    width: 7px;
+    height: 7px;
+  }
+  .boot-next {
+    right: -3px;
+    width: 30px;
+    height: 30px;
+  }
+  .boot-next img {
+    width: 14px;
+  }
+  .boot-prev {
+    right: -15px;
+    width: 30px;
+    height: 30px;
+  }
+  .boot-prev img {
+    width: 14px;
+  }
+  .boot-outer-next {
+    width: 41px;
+    height: 46px;
+    right: -17px;
   }
 }

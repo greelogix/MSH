@@ -62,7 +62,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse ms-sm-5"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
 
           <ul class="navbar-nav mb-2 mb-lg-0">
@@ -110,7 +113,7 @@
             <li class="nav-item px-2">
               <a
                 class="nav-link fw-semibold text-black fs5"
-                href="./pages/contact-us.html"
+                href="./contact-us.html"
                 >Contact Us</a
               >
             </li>
@@ -179,23 +182,21 @@
       <div
         class="hero-container d-flex flex-column justify-content-center mb-5"
       >
-        <img
+        <!-- <img
           class="parent-img-1 discover-img"
           src="./images/0.png"
           width="100%"
           height="auto"
           alt=""
-        />
-        <div class="d-flex justify-content-center">
-          <!-- <div class="d-flex align-items-center col-3 d-xl-block">
-            <img
-              class="parent-img-1 discover-img"
-              src="./images/0.png"
-              width="100%"
-              height="auto"
-              alt=""
-            />
-          </div> -->
+        /> -->
+        <div class="d-flex justify-content-center position-relative">
+          <img
+            class="parent-img-1 discover-img"
+            src="./images/0.png"
+            width="100%"
+            height="auto"
+            alt=""
+          />
           <div
             class="text-center d-flex flex-column align-items-center justify-content-center"
           >
@@ -248,7 +249,11 @@
     <div
       class="d-flex justify-content-center align-items-center flex-column py-3 position-relative"
     >
-      <img class="program-vector-curve" src="./images/curve-vector.png" alt="" />
+      <img
+        class="program-vector-curve"
+        src="./images/curve-vector.png"
+        alt=""
+      />
       <img
         class="parent-img-1 baby-progr"
         src="./images/1.psd.png"
@@ -256,8 +261,8 @@
         height="auto"
         alt=""
       />
-      <div class="row pt-4 program-container mt-1 mt-lg-4 ">
-        <div class="d-flex justify-content-center ">
+      <div class="row pt-4 program-container mt-1 mt-lg-4">
+        <div class="d-flex justify-content-center">
           <div
             class="text-center d-flex flex-column align-items-center justify-content-center"
           >
@@ -266,7 +271,7 @@
         </div>
       </div>
       <div
-        class="hero-container d-flex flex-column justify-content-center mb-1 mb-lg-5 pb-2  pb-lg-5 "
+        class="hero-container d-flex flex-column justify-content-center mb-1 pb-2"
       >
         <div
           class="discover-container-text d-flex mx-auto justify-content-center py-3"
@@ -386,8 +391,128 @@
         </div>
       </div>
       <div class="row justify-content-center my-4">
-        <di class="col-11 col-md-8">
-          <section class="carousel" aria-label="Gallery">
+        <di class="col-10 col-md-8">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner slider-row">
+              <div class="carousel-item active">
+                <div class="row overflow-hidden">
+                  <div class="col">
+                    <img
+                      src="./images/Frame 7.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col">
+                    <img
+                      src="./images/Clip path group.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row overflow-hidden">
+                  <div class="col">
+                    <img
+                      src="./images/Frame 7.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col">
+                    <img
+                      src="./images/Clip path group.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row overflow-hidden">
+                  <div class="col">
+                    <img
+                      src="./images/Frame 7.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col">
+                    <img
+                      src="./images/Clip path group.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <div class="boot-prev">
+                <img src="./images/Vector (8).png" alt="" />
+              </div>
+
+              <!-- <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span> -->
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <!-- <img src="./images/Vector (7).png" alt="" /> -->
+              <div class="boot-outer-next">
+                <div class="boot-next">
+                  <img src="./images/Vector (7).png" alt="" />
+                </div>
+              </div>
+              <!-- <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span> -->
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- <section class="carousel" aria-label="Gallery">
             <ol class="carousel__viewport">
               <li id="carousel__slide1" tabindex="0" class="carousel__slide">
                 <div class="carousel__snapper p-4">
@@ -476,15 +601,7 @@
                   >
                 </div>
               </li>
-              <!-- <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"></div>
-              <a href="#carousel__slide1" class="carousel__prev"
-                >Go to previous slide</a
-              >
-              <a href="#carousel__slide3" class="carousel__next"
-                >Go to next slide</a
-              >
-            </li> -->
+  
             </ol>
             <aside class="carousel__navigation">
               <ol class="carousel__navigation-list">
@@ -509,14 +626,10 @@
                     >Go to slide 3</a
                   >
                 </li>
-                <!-- <li class="carousel__navigation-item">
-                <a href="#carousel__slide4" class="carousel__navigation-button"
-                  >Go to slide 4</a
-                >
-              </li> -->
+             
               </ol>
             </aside>
-          </section>
+          </section> -->
         </di>
       </div>
     </div>
