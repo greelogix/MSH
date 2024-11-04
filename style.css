@@ -44,6 +44,24 @@
 /* .//////////////////////////////////// */
 /* ........Home Page CSS............ */
 /* .//////////////////////////////////// */
+.lower-slider-container {
+  min-height: 95vh;
+}
+@media (max-width: 1005px) {
+  .lower-slider-container {
+    min-height: 75vh;
+  }
+}
+@media (max-width: 715px) {
+  .lower-slider-container {
+      min-height: 64vh;
+  }
+}
+@media (max-width: 405px) {
+  .lower-slider-container {
+      min-height: 72vh;
+  }
+}
 .hero-container {
   max-width: 85%;
 }
@@ -989,9 +1007,8 @@ textarea {
 .admission-arrow-container {
   background-color: #f5a800;
   max-width: fit-content;
-  /* width: 32px;
-  height: 32px;  */
   border-radius: 50%;
+  padding: 8px 10px;
 }
 .admission-arrow-container:hover {
   background-color: #c10230 !important;
@@ -1024,7 +1041,6 @@ textarea {
     font-size: 16px !important;
   }
 }
-
 @media (max-width: 1500px) {
   .admission-container {
     width: 85% !important;
@@ -1032,6 +1048,9 @@ textarea {
 }
 
 /* video player css */
+.video-js .vjs-tech {
+  height: 110% !important;
+}
 .vjs-poster img {
   object-fit: cover !important;
 }
@@ -1083,7 +1102,7 @@ textarea {
 .right-vector-msh {
   position: absolute;
   right: 10vw;
-  top: 24vh;
+  top: 29vh;
   max-width: 100%;
   height: 90%;
   transition: all 0.3s ease;
@@ -1094,13 +1113,13 @@ textarea {
   bottom: 0;
   height: 40%;
   /* max-width: 100%; */
-  top: 34vh;
+  top: 38vh;
 }
 .top-vector-discover {
   position: absolute;
   top: -25%;
   width: 59vw;
-  left: 15vw;
+  left: 9vw;
 }
 .program-vector-curve {
   position: absolute;
@@ -1111,7 +1130,7 @@ textarea {
 }
 .discover-img {
   position: absolute;
-  top: 6vh;
+  top: 4vh;
   width: 17vw;
   left: -9vw;
 }
@@ -1428,5 +1447,35 @@ textarea {
     width: 41px;
     height: 46px;
     right: -17px;
+  }
+}
+
+/* video plater icon change */
+.video-js .vjs-big-play-button {
+  width: 220px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+}
+.video-js .vjs-big-play-button::before {
+  content: "\f144";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 80px;
+}
+.video-js .vjs-big-play-button .vjs-icon-placeholder {
+  display: none;
+}
+.vjs-theme-forest .vjs-big-play-button {
+  color: #d3d3d3de !important;
+  background-image: none !important;
+}
+@media (max-width: 567px) {
+  .video-js .vjs-big-play-button::before {
+    font-size: 40px;
   }
 }
