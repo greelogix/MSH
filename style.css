@@ -1,8 +1,56 @@
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("./fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./fonts/Poppins-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./fonts/Poppins-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Poppins-ExtraBold", sans-serif;
+}
+h2 {
+  font-family: "Poppins-Bold", sans-serif;
+}
+h3 {
+  font-family: "Poppins-SemiBold", sans-serif;
+}
+h4 {
+  font-family: "Poppins-Medium", sans-serif;
+}
+body {
+  font-family: "Poppins-Regular", sans-serif;
+}
+p {
+  margin: 0px !important;
+}
+/* * {
+  p {
+    padding: 0px !important;
+  }
+} */
 /* .//////////////////////////////////// */
 /* ............Navbar CSS................. */
 /* .//////////////////////////////////// */
 .page-down-link {
-  font-size: clamp(17px, 5vw, 24px);
+  font-size: clamp(17px, 3vw, 28px);
 }
 .navabar-outer {
   height: 135px;
@@ -54,12 +102,12 @@
 }
 @media (max-width: 715px) {
   .lower-slider-container {
-      min-height: 64vh;
+    min-height: 64vh;
   }
 }
 @media (max-width: 405px) {
   .lower-slider-container {
-      min-height: 72vh;
+    min-height: 72vh;
   }
 }
 .hero-container {
@@ -145,9 +193,12 @@
 .programs-main-bottom-container {
   max-width: 100%;
   height: auto;
-  background-color: #c10230;
+  /* background-color: #c10230; */
   color: white;
   border-radius: 20px;
+}
+.programs-main-bottom-container:hover {
+  background-color: #c10230 !important;
 }
 
 .logo-bg {
@@ -183,248 +234,12 @@
   border-radius: 36px; /* To make sure the video follows the container's border-radius */
 }
 
-/* ............Secons Carousal's CSS ................ */
-
-/* @keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
-}
-
-* {
-  box-sizing: border-box;
-  scrollbar-color: transparent transparent;  
-  scrollbar-width: 0px;
-}
-
-*::-webkit-scrollbar {
-  width: 0;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
-* {
-  -ms-overflow-style: none;
-}
-
-ol,
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.carousel {
-  position: relative;
-   filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
-}
-
-.carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  counter-reset: item;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  border-radius: 50px;
- }
-
-.carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-   counter-increment: item;
-  border-radius: 50px;
-}
-
- 
-.carousel__slide:before {
-  content: counter(item);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -40%, 70px);
-  color: #fff;
-  font-size: 2em;
-}
-
-.carousel__snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
-}
-
-@media (hover: hover) {
-  .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-
-  .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel__snapper {
-    animation-name: none;
-  }
-}
-
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
-  animation-name: none;
-}
-
-.carousel__navigation {
-  position: absolute;
-  right: 0;
-  bottom: 7%;
-  left: 0;
-  text-align: center;
-  z-index: 3;
-}
-
-.carousel__navigation-list,
-.carousel__navigation-item {
-  display: inline-block;
-}
-
-.carousel__navigation-button {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  background-color: #33333373;
-  background-clip: content-box;
-  border: 0.25rem solid transparent;
-  border-radius: 50%;
-  font-size: 0;
-  transition: transform 0.1s;
-}
-
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next {
-  position: absolute;
-  top: 0;
-  margin-top: 23.5%;
-  width: 4rem;
-  height: 4rem;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  font-size: 0;
- }
-
-.carousel::before,
-.carousel__prev {
-  outline: 5px solid white;
-}
-
-.carousel::before,
-.carousel__prev {
-  left: -1rem;
-}
-
-.carousel::after,
-.carousel__next {
-  right: -1rem;
-}
-
-.carousel::before,
-.carousel::after {
-  content: "";
-  z-index: 1;
-  background-color: rgba(193, 2, 48, 1);
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #fff;
-  font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
-  pointer-events: none;
-}
-
-.carousel::before {
-  background-image: url("../images/Vector (8).png");
-}
-
-.carousel::after {
-  background-image: url("../images/Vector (7).png");
-}
-
-.carousel .row {
-  --bs-gutter-x: 0;
-} */
-
-/* Second Carosual's CSS Ends */
-
 .parent-img-1 {
   max-width: 320px;
   max-height: 280px;
   margin-left: 2vw;
 }
-/* .parent-img-3 {
-  max-width: 313px;
-  max-height: 320px;
-} */
+
 .parent-img-3 {
   max-width: 219px;
   max-height: 260px;
@@ -623,15 +438,20 @@ li {
   border-radius: 25px;
   background-color: #f7f9f9f9;
 }
+.hero-team-container-two {
+  max-width: 85%;
+  border-radius: 25px;
+  background-color: #f7f9f9f9;
+}
 .team-container {
   /* background-color: white; */
 }
-/* .team-profile-container {
-  max-width: 235px;
-  height: 200px;
-  border-radius: 25px;
-  overflow: hidden;
-} */
+.team-name-fs {
+  font-size: clamp(20px, 8vw, 42px);
+}
+.team-fs-head-two {
+  font-size: clamp(16px, 2vw, 30px);
+}
 .team-profile-image {
   max-width: 400px;
   /* min-width: 250px; */
@@ -646,19 +466,31 @@ li {
 .team-row {
   border-radius: 25px;
 }
+.team-decsrip {
+  line-height: 34px;
+  font-size: 22px;
+}
+@media (max-width: 1200px) {
+  .hero-team-container-two {
+    max-width: 70%;
+  }
+}
 
 @media (max-width: 768px) {
   .banner-container img {
     height: 100% !important;
   }
+
   .hero-team-container {
     max-width: 100% !important;
   }
   .team-decsrip {
-    font-size: 15px !important;
+    font-size: 17px !important;
+  }
+  .hero-team-container-two {
+    max-width: 80%;
   }
 }
-
 @media (max-width: 576px) {
   .hero-team-container {
     max-width: 100% !important;
@@ -667,6 +499,9 @@ li {
   }
   .team-banner-decrip {
     font-size: 18px !important;
+  }
+  .hero-team-container-two {
+    max-width: 100%;
   }
 }
 
@@ -722,7 +557,10 @@ li {
 /* .......MSH Locations CSS............ */
 /* .//////////////////////////////////// */
 .msh-location-banner {
-  margin-top: -55px;
+  margin-top: 60px;
+}
+.location-head-banner {
+  font-size: clamp(40px, 7vw, 129px);
 }
 .location-fs {
   font-size: clamp(14px, 2vw, 18px);
@@ -734,7 +572,7 @@ li {
   margin-bottom: 0px !important;
 }
 .location-head {
-  font-size: clamp(40px, 5vw, 120px);
+  font-size: clamp(40px, 10vw, 129px);
 }
 .location-head-sub {
   font-size: clamp(28px, 5vw, 55px);
@@ -743,28 +581,36 @@ li {
   font-size: clamp(20px, 2vw, 40px);
 }
 .location-container {
-  width: 65%;
+  width: 75%;
 }
-
-.location-border {
+.line-height-36 {
+  line-height: 43px;
+}
+.emillia-text-container.line-height-36 p,
+h3 {
+  font-size: clamp(15px, 3vw, 25px);
+}
+.msh-bino-img {
+  position: absolute;
+  right: 0;
+  width: 13vw;
+  top: 0;
+}
+/* .location-border {
   border: 5px solid #c10230;
-}
-
-@media (min-width: 768px) {
-  .location-default-img {
-    /* max-height: 287px;
-    width: 379px; */
-    max-height: 213px;
-    width: 360px;
-  }
+} */
+.location-border:hover {
+  outline: 5px solid #c10230;
 }
 @media (max-width: 1500px) {
   .location-container {
     width: 85% !important;
   }
 }
-
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+  .location-container {
+    width: 60% !important;
+  }
   .location-right {
     order: 1;
   }
@@ -773,17 +619,41 @@ li {
     order: 2;
   }
 }
+@media (min-width: 1200px) {
+  .location-default-img {
+    height: 291px;
+    width: 560px;
+  }
+}
+@media (max-width: 768px) {
+  .location-container {
+    width: 80% !important;
+  }
+}
+@media (max-width: 576px) {
+  .line-height-36 {
+    line-height: 30px;
+  }
+}
 
-@media (max-width: 442px) {
+/* @media (max-width: 442px) {
   .msh-location-banner {
     margin-top: 0px;
   }
-}
+} */
 
 /* .//////////////////////////////////// */
 /* .......Our Programs CSS............ */
 /* .//////////////////////////////////// */
-
+.section-head {
+  font-size: clamp(45px, 5vw, 98px);
+}
+.program-container {
+  width: 82%;
+}
+.programs-default-img {
+  max-height: 342px;
+}
 .programs-img-container {
   max-width: 100%;
 }
@@ -792,23 +662,23 @@ li {
   max-height: 360px;
 }
 .program-fs {
-  font-size: clamp(14px, 2vw, 22px);
+  font-size: clamp(14px, 2vw, 27px);
 }
 .program-fs-head {
-  font-size: clamp(18px, 2vw, 28px);
+  font-size: clamp(18px, 4vw, 37px);
 }
 .program-fs-head-three {
   font-size: clamp(13px, 2vw, 24px);
 }
 
 .program-fs-head-two {
-  font-size: clamp(14px, 2vw, 28px);
+  font-size: clamp(14px, 2vw, 35px);
 }
 .bg-litegray {
   background-color: #d3d3d345;
 }
 .program-banner-img img {
-  max-height: 400px;
+  max-height: 600px;
   object-fit: cover;
   object-position: center;
 }
@@ -831,6 +701,12 @@ li {
   .programs-img-container img {
     max-width: 250px !important;
   }
+}
+.program-email {
+  font-size: clamp(18px, 4vw, 34px);
+}
+.program-video-cap {
+  font-size: clamp(20px, 4vw, 52px);
 }
 
 /* .//////////////////////////////////// */
@@ -966,17 +842,34 @@ textarea {
 .admission-head {
   width: 100%;
 }
+.enrollment-list li {
+  font-size: clamp(14px, 2vw, 26px);
+  line-height: 44px;
+}
 .admission-fs {
-  font-size: clamp(17px, 2vw, 27px);
+  font-size: clamp(18px, 2vw, 37px);
+}
+.registration-fs {
+  font-size: clamp(20px, 2vw, 40px);
+}
+.registration-desc-fs {
+  font-size: clamp(17px, 2vw, 34px);
+}
+.registration-info-decrip {
+  font-size: clamp(14px, 2vw, 30px);
+}
+.admission-fs-head-two {
+  font-size: clamp(14px, 2vw, 31px);
 }
 .admission-descrip-fs {
-  font-size: clamp(14px, 2vw, 19px);
+  font-size: clamp(14px, 2vw, 26px);
+  line-height: 44px;
 }
 .admission-btn-fs {
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(14px, 2vw, 26px);
 }
 .admission-banner-img img {
-  max-height: 500px;
+  max-height: 664px;
   object-fit: cover;
   object-position: bottom;
 }
@@ -994,7 +887,7 @@ textarea {
 }
 .programs-container-inner ul {
   list-style-type: disc !important;
-  padding-left: 0px;
+  padding-left: 23px;
 }
 
 .programs-container-inner ul li {
@@ -1002,8 +895,7 @@ textarea {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.team-banner-decrip {
-}
+
 .admission-arrow-container {
   background-color: #f5a800;
   max-width: fit-content;
@@ -1023,7 +915,7 @@ textarea {
   width: 100% !important;
 }
 .admission-fs-head {
-  font-size: clamp(25px, 5vw, 40px);
+  font-size: clamp(29px, 5vw, 70px);
 }
 @media (max-width: 768px) {
   .admission-info-container {
@@ -1034,11 +926,14 @@ textarea {
   .admission-bottom-decrip {
     font-size: 20px !important;
   }
-  /* .admission-info-container {
-    width: 85% !important;
-  } */
-  .admission-info-decrip {
-    font-size: 16px !important;
+
+  .admission-descrip-fs {
+    font-size: clamp(16px, 2vw, 26px) !important;
+    line-height: 28px !important;
+  }
+  .enrollment-list li {
+    font-size: clamp(16px, 2vw, 26px) !important;
+    line-height: 28px !important;
   }
 }
 @media (max-width: 1500px) {

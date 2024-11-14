@@ -9,10 +9,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -46,7 +42,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse ms-sm-5" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse ms-sm-5"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
 
           <ul class="navbar-nav mb-2 mb-lg-0">
@@ -115,17 +114,19 @@
     </nav>
     <div class="d-flex justify-content-center mb-5 py-sm-3 py-4">
       <div
-        class="hero-container d-flex flex-column justify-content-center my-2 my-sm-4 pt-sm-5 pt-2"
+        class="hero-container d-flex flex-column justify-content-center my-2 my-sm-4 pt-sm-5 pt-2 position-relative"
       >
+        <img src="./images/bino3.png" class="msh-bino-img" alt="" />
+
         <div
           class="text-center d-flex flex-column align-items-center justify-content-center"
         >
-          <p class="location-head bolder grayish mb-0">
+          <h1 class="location-head-banner grayish mb-0">
             MSH <span class="redish">locations</span>
-          </p>
-          <div class="col-lg-10 msh-location-banner" >
+          </h1>
+          <div class="col-lg-11 msh-location-banner">
             <img
-              src="./images/msh-locate.png"
+              src="./images/msh-banner.png"
               width="100%"
               height="auto"
               alt=""
@@ -135,17 +136,17 @@
       </div>
     </div>
 
-    <div class="d-flex justify-content-center align-items-center mt-5 ">
+    <div class="d-flex justify-content-center align-items-center mt-5">
       <div class="location-container">
         <div
           class="location-border shadow bg-white rounded-5 d-flex justify-content-center"
         >
-          <!-- class="col-12 col-md-11 d-sm-flex d-block overflow-hidden my-1 emillia-container-inner p-4 gap-3" -->
-
           <div
-            class="col-12 col-md-11 d-flex emillia-container-inner flex-column flex-sm-row gap-3 my-1 overflow-hidden p-4"
+            class="col-12 col-md-11 d-flex emillia-container-inner flex-column flex-xl-row gap-3 my-1 overflow-hidden p-4"
           >
-            <div class="location-left">
+            <div
+              class="location-left d-flex flex-column justify-content-center"
+            >
               <div class="col-12">
                 <img
                   class="rounded-top-4 location-default-img"
@@ -163,11 +164,11 @@
               </div>
             </div>
             <div
-              class="emillia-small emillia-text-container location-fs p-3 d-flex flex-column location-right"
+              class="emillia-small emillia-text-container line-height-36 location-fs p-0 p-sm-3 d-flex flex-column location-right"
             >
-              <p class="fw-bold">Between 84th & 85th Street on 1st Avenue</p>
+              <h3 class="fw-bold">Between 84th & 85th Street on 1st Avenue</h3>
               <p>New York, NY 10028</p>
-              <p>Ages: 3 months - 2 years</p>
+              <h3>Ages: 3 months - 2 years</h3>
               <p>Admissions: 347-446-2140</p>
               <p>Phone: (212) 772-2066</p>
               <p>Email: info@mshnyc.com</p>
@@ -181,16 +182,18 @@
       </div>
     </div>
 
-    <div class="d-flex justify-content-center align-items-center mt-5 ">
+    <div class="d-flex justify-content-center align-items-center mt-5">
       <div class="location-container">
-        <div class="shadow bg-white rounded-5 d-flex justify-content-center">
+        <div
+          class="location-border shadow bg-white rounded-5 d-flex justify-content-center"
+        >
           <div
-            class="col-12 col-md-11 d-sm-flex d-block overflow-hidden my-1 emillia-container-inner p-4 gap-3"
+            class="col-12 col-md-11 d-flex emillia-container-inner flex-column flex-xl-row gap-3 my-1 overflow-hidden p-4"
           >
             <div
-              class="emillia-small emillia-text-container location-fs p-3 d-flex flex-column"
+              class="emillia-small emillia-text-container line-height-36 location-fs p-0 p-sm-3 d-flex flex-column location-right"
             >
-              <p class="fw-bold">Between 83rd & 84th Street on 1st Avenue</p>
+              <h3 class="fw-bold">Between 83rd & 84th Street on 1st Avenue</h3>
               <p>New York, NY 10028</p>
               <p>Ages: 3 - 5 years</p>
               <p>Admissions: 347-446-2140</p>
@@ -201,7 +204,9 @@
                 early learning for little ones!
               </p>
             </div>
-            <div class="">
+            <div
+              class="location-left d-flex flex-column justify-content-center"
+            >
               <div class="col-12">
                 <img
                   class="rounded-top-4 location-default-img"
@@ -222,19 +227,21 @@
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-center align-items-center mt-5 ">
+    <div class="d-flex justify-content-center align-items-center mt-5">
       <div class="location-container">
-        <div class="shadow bg-white rounded-5 d-flex justify-content-center">
-          <!-- class="col-12 col-md-11 d-sm-flex d-block overflow-hidden my-1 emillia-container-inner p-4 gap-3" -->
-
+        <div
+          class="location-border shadow bg-white rounded-5 d-flex justify-content-center"
+        >
           <div
-            class="col-12 col-md-11 d-flex emillia-container-inner flex-column flex-sm-row gap-3 my-1 overflow-hidden p-4"
+            class="col-12 col-md-11 d-flex emillia-container-inner flex-column flex-xl-row gap-3 my-1 overflow-hidden p-4"
           >
-            <div class="location-left">
+            <div
+              class="location-left d-flex flex-column justify-content-center"
+            >
               <div class="col-12">
                 <img
                   class="rounded-top-4 location-default-img"
-                  src="./images/location1.png"
+                  src="./images/location3.png"
                   width="100%"
                   height="auto"
                   alt=""
@@ -242,15 +249,15 @@
               </div>
 
               <div
-                class="program-fs-head bg-yellowish d-flex fw-bold text-white justify-content-center rounded-bottom-4 mt-2 py-2 text-center"
+                class="program-fs-head bg-yellowish d-flex fw-bold text-white justify-content-center rounded-bottom-4 py-2 text-center"
               >
                 1456 First Avenue
               </div>
             </div>
             <div
-              class="emillia-small emillia-text-container location-fs p-3 d-flex flex-column location-right"
+              class="emillia-small emillia-text-container line-height-36 location-fs p-0 p-sm-3 d-flex flex-column location-right"
             >
-              <p class="fw-bold">Corner of 76th Street & 1st Avenue</p>
+              <h3 class="fw-bold">Corner of 76th Street & 1st Avenue</h3>
               <p>New York, NY 10021</p>
               <p>Ages: 3 months - 5 years</p>
               <p>Admissions: 347-446-2140</p>
@@ -266,16 +273,18 @@
       </div>
     </div>
 
-    <div class="d-flex justify-content-center align-items-center mt-5 ">
+    <div class="d-flex justify-content-center align-items-center mt-5">
       <div class="location-container">
-        <div class="shadow bg-white rounded-5 d-flex justify-content-center">
+        <div
+          class="location-border shadow bg-white rounded-5 d-flex justify-content-center"
+        >
           <div
-            class="col-12 col-md-11 d-sm-flex d-block overflow-hidden my-1 emillia-container-inner p-4 gap-3"
+            class="col-12 col-md-11 d-flex emillia-container-inner flex-column flex-xl-row gap-3 my-1 overflow-hidden p-4"
           >
             <div
-              class="emillia-small emillia-text-container location-fs p-3 d-flex flex-column"
+              class="emillia-small emillia-text-container line-height-36 location-fs p-0 p-sm-3 d-flex flex-column location-right"
             >
-              <p class="fw-bold">28th Street Between 10th & 11th Avenue</p>
+              <h3 class="fw-bold">28th Street Between 10th & 11th Avenue</h3>
               <p>New York, NY 10001</p>
               <p>Ages: 3 months - 5 years</p>
               <p>Admissions: 347-446-2140</p>
@@ -286,7 +295,9 @@
                 to explore urban nature!
               </p>
             </div>
-            <div class="">
+            <div
+              class="location-left d-flex flex-column justify-content-center"
+            >
               <div class="col-12">
                 <img
                   class="rounded-top-4 location-default-img"
@@ -307,19 +318,22 @@
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-center align-items-center mt-5 ">
-      <div class="location-container">
-        <div class="shadow bg-white rounded-5 d-flex justify-content-center">
-          <!-- class="col-12 col-md-11 d-sm-flex d-block overflow-hidden my-1 emillia-container-inner p-4 gap-3" -->
 
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <div class="location-container">
+        <div
+          class="location-border shadow bg-white rounded-5 d-flex justify-content-center"
+        >
           <div
-            class="col-12 col-md-11 d-flex emillia-container-inner flex-column flex-sm-row gap-3 my-1 overflow-hidden p-4"
+            class="col-12 col-md-11 d-flex emillia-container-inner flex-column flex-xl-row gap-3 my-1 overflow-hidden p-4"
           >
-            <div class="location-left">
+            <div
+              class="location-left d-flex flex-column justify-content-center"
+            >
               <div class="col-12">
                 <img
                   class="rounded-top-4 location-default-img"
-                  src="./images/location1.png"
+                  src="./images/location5.png"
                   width="100%"
                   height="auto"
                   alt=""
@@ -333,13 +347,13 @@
               </div>
             </div>
             <div
-              class="emillia-small emillia-text-container location-fs p-3 d-flex flex-column location-right"
+              class="emillia-small emillia-text-container line-height-36 location-fs p-0 p-sm-3 d-flex flex-column location-right"
             >
-              <p class="fw-bold">Between 80th & 81st Street on 2nd Avenue</p>
+              <h3 class="fw-bold">Between 80th & 81st Street on 2nd Avenue</h3>
               <p>New York, NY 10028</p>
               <p>Ages: 3 months - 5 years</p>
               <p>Admissions: 347-446-2140</p>
-              <p>Phone: (212) 879-3495</p>
+              <p>Phone: (212) 837-1746</p>
               <p>Email: info@mshnyc.com</p>
               <p class="redish">
                 Fun Fact: Our newest addition to the family brings fresh
@@ -351,16 +365,20 @@
       </div>
     </div>
 
-    <div class="d-flex justify-content-center pb-3 my-sm-0 my-5 pt-5">
-      <div class="hero-container d-flex flex-column justify-content-center">
+    <div
+      class="d-flex justify-content-center pb-3 my-sm-0 my-0 my-sm-5 pt-0 pt-sm-5"
+    >
+      <div
+        class="hero-container mt-5 d-flex flex-column justify-content-center"
+      >
         <div
-          class="text-center d-flex flex-column align-items-center justify-content-center"
+          class="text-center d-flex flex-column align-items-center justify-content-center pb-2 pb-sm-4"
         >
-          <p class="location-fs-head bolder grayish">
+          <h2 class="program-video-cap grayish">
             A Look Inside Manhattan Schoolhouse
-          </p>
+          </h2>
         </div>
-        <div class="col-12 mt-4">
+        <div class="col-12 my-4">
           <video
             id="my-video"
             class="video-js vjs-theme-forest"
@@ -388,20 +406,14 @@
             </p>
           </video>
         </div>
-        <!-- <div class="responsive-video-container">
-          <video controls>
-            <source
-              src="https://www.w3schools.com/html/mov_bbb.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div> -->
       </div>
     </div>
-    <div class="d-flex justify-content-center px-3">
-      <div class="bg-redish px-4 py-2 rounded-4 text-white program-fs-head text-center">
-        Email for all locations info@mshnyc.com
+
+    <div class="d-flex justify-content-center px-3 pt-4 pb-5">
+      <div
+        class="bg-redish px-5 py-2 rounded-3 text-white program-email text-center"
+      >
+        <h3>Email for all locations info@mshnyc.com</h3>
       </div>
     </div>
 
