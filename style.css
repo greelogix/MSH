@@ -472,7 +472,7 @@ h1 .redish {
   font-size: clamp(20px, 8vw, 42px);
 }
 .team-fs-head-two {
-  font-size: clamp(16px, 2vw, 30px);
+  font-size: clamp(15px, 2vw, 30px);
 }
 .team-profile-image {
   max-width: 400px;
@@ -491,6 +491,7 @@ h1 .redish {
 .team-decsrip {
   line-height: 34px;
   font-size: 22px;
+  font-size: clamp(13px, 2vw, 22px);
 }
 @media (max-width: 1200px) {
   .hero-team-container-two {
@@ -507,7 +508,7 @@ h1 .redish {
     max-width: 100% !important;
   }
   .team-decsrip {
-    font-size: 17px !important;
+    line-height: 34px;
   }
   .hero-team-container-two {
     max-width: 80%;
@@ -1042,12 +1043,14 @@ textarea {
 }
 .testimonial-bottom-vector {
   position: absolute;
-  left: 24vw;
+  left: 18vw;
   bottom: 0;
-  height: 40%;
+  height: 54%;
   /* max-width: 100%; */
   top: 38vh;
 }
+
+
 .top-vector-discover {
   position: absolute;
   top: -25%;
