@@ -45,9 +45,9 @@ p {
   margin: 0px !important;
 }
 
-/* .row {
+.emillia-container .row {
   --bs-gutter-x: 0 !important;
-} */
+}
 
 /* .//////////////////////////////////// */
 /* ............Navbar CSS................. */
@@ -464,6 +464,12 @@ h1 .redish {
   max-width: 85%;
   border-radius: 25px;
   background-color: #f7f9f9f9;
+}
+h2 .redish {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  /* color: inherit; */
 }
 .team-container {
   /* background-color: white; */
@@ -1050,7 +1056,6 @@ textarea {
   top: 38vh;
 }
 
-
 .top-vector-discover {
   position: absolute;
   top: -25%;
@@ -1123,6 +1128,9 @@ textarea {
   .home-descrip-fs-two {
     line-height: 32px;
   }
+  .msh-location-banner {
+    margin-top: 30px;
+}
 }
 
 /* .//////////////// */
@@ -1344,7 +1352,6 @@ h1 .color-yellowish {
 }
 .boot-outer-next {
   border: 3px solid #0000004a;
-  /* background-color: #c10230; */
   width: 51px;
   height: 70px;
   display: flex;
@@ -1353,7 +1360,6 @@ h1 .color-yellowish {
   align-items: center;
   right: -17px;
   position: absolute;
-  /* outline: 3px solid white; */
   border-radius: 50%;
 }
 .boot-next {
@@ -1366,10 +1372,34 @@ h1 .color-yellowish {
   align-items: center;
   right: -16px;
   position: absolute;
-  /* outline: 3px solid white; */
   border-radius: 38px;
   outline: 7px solid white;
 }
+/* .boot-outer-next {
+  border: 3px solid #0000004a;
+  width: 64px;
+  height: 68px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  right: -29px;
+  position: absolute;
+  border-radius: 50%;
+} */
+
+/* .boot-next {
+  background-color: #c10230;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  right: -2px;
+  position: absolute;
+    outline: 6px solid white;
+} */
 .boot-next img {
   width: 20px;
   /* outline: 3px solid white; */
@@ -1456,3 +1486,23 @@ h1 .color-yellowish {
     font-size: 40px;
   }
 }
+
+.video-js .vjs-big-play-button {
+  border: none !important;
+  background-color: transparent !important;
+}
+.active-button {
+  background-color: #c10230 !important;
+  color: white;
+}
+@media (max-width: 400px) {
+  .emillia-container {
+    width: 88% !important;
+  }
+  
+}
+
+/* .row > * {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+} */
