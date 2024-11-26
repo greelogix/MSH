@@ -1605,6 +1605,33 @@ h1 .color-yellowish {
   transform: scale(1.2);
 }
 
+@media (max-width: 1600px) {
+  .pin-one-address {
+    left: 6.9%;
+    top: 0%;
+  }
+  .pin-two-address {
+    left: 33.9%;
+    top: -51%;
+  }
+  .pin-three-address {
+    left: 48.9%;
+    top: -23%;
+  }
+  .pin-four-address {
+    display: none;
+    position: absolute;
+    right: 16.5%;
+    top: -19%;
+  }
+  .pin-five-address {
+    display: none;
+    position: absolute;
+    right: -6.1%;
+    top: -6%;
+  }
+}
+/* 
 @media (max-width: 992px) {
   .pin-address {
     font-size: clamp(13px, 2vw, 18px);
@@ -1636,10 +1663,9 @@ h1 .color-yellowish {
     right: -6.1%;
     top: -6%;
   }
-}
+} */
 
-@media (max-width: 992px) {
-  
+@media (max-width: 576px) {
   .pin-address {
     font-size: clamp(11px, 2vw, 18px);
   }
