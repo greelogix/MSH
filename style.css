@@ -631,11 +631,9 @@ h3 {
   width: 13vw;
   top: 0;
 }
-/* .location-border {
-  border: 5px solid #c10230;
-} */
-.location-border:hover {
-  outline: 5px solid #c10230;
+.active-location {
+  border: 8px solid #c10230;
+  border-radius: 33px;
 }
 @media (max-width: 1500px) {
   .location-container {
@@ -1130,7 +1128,7 @@ textarea {
   }
   .msh-location-banner {
     margin-top: 30px;
-}
+  }
 }
 
 /* .//////////////// */
@@ -1499,10 +1497,170 @@ h1 .color-yellowish {
   .emillia-container {
     width: 88% !important;
   }
-  
 }
 
 /* .row > * {
   padding-right: 0px !important;
   padding-left: 0px !important;
 } */
+
+.red-border {
+  border-bottom: 5px solid #c10230;
+}
+
+.pin img {
+  height: 55px !important;
+}
+
+.pin:hover {
+  transform: scale(1.2);
+}
+.pin-address {
+  font-size: clamp(15px, 2vw, 18px);
+}
+.pin-one {
+  position: absolute;
+  left: 11.9%;
+  top: 39%;
+}
+.pin-one-address {
+  display: none;
+  font-size: clamp(15px, 2vw, 18px);
+  position: absolute;
+  left: 9.9%;
+  top: 17%;
+  height: 55px !important;
+}
+.pin-one:hover + .pin-one-address {
+  display: block;
+  transition: font-size 0.3s ease;
+  transform: scale(1.2);
+}
+
+.pin-two {
+  position: absolute;
+  left: 37.9%;
+  top: -11%;
+}
+.pin-two-address {
+  display: none;
+  position: absolute;
+  left: 35.9%;
+  top: -35%;
+}
+.pin-two:hover + .pin-two-address {
+  display: block;
+  transition: font-size 0.3s ease;
+  transform: scale(1.2);
+}
+
+.pin-three {
+  position: absolute;
+  left: 53.9%;
+  top: 18%;
+}
+.pin-three-address {
+  display: none;
+  position: absolute;
+  left: 51.9%;
+  top: -6%;
+}
+.pin-three:hover + .pin-three-address {
+  display: block;
+  transition: font-size 0.3s ease;
+  transform: scale(1.2);
+}
+
+.pin-four {
+  position: absolute;
+  right: 24.5%;
+  top: 24%;
+}
+.pin-four-address {
+  display: none;
+  position: absolute;
+  right: 21.5%;
+  top: 0%;
+}
+.pin-four:hover + .pin-four-address {
+  display: block;
+  transition: font-size 0.3s ease;
+  transform: scale(1.2);
+}
+
+.pin-five {
+  position: absolute;
+  right: -0.1%;
+  top: 35%;
+}
+.pin-five-address {
+  display: none;
+  position: absolute;
+  right: -3.1%;
+  top: 9%;
+}
+.pin-five:hover + .pin-five-address {
+  display: block;
+  transition: font-size 0.3s ease;
+  transform: scale(1.2);
+}
+
+@media (max-width: 992px) {
+  .pin-address {
+    font-size: clamp(13px, 2vw, 18px);
+  }
+  .pin img {
+    height: 25px !important;
+  }
+  .pin-one-address {
+    left: 6.9%;
+    top: 0%;
+  }
+  .pin-two-address {
+    left: 33.9%;
+    top: -51%;
+  }
+  .pin-three-address {
+    left: 48.9%;
+    top: -23%;
+  }
+  .pin-four-address {
+    display: none;
+    position: absolute;
+    right: 16.5%;
+    top: -19%;
+  }
+  .pin-five-address {
+    display: none;
+    position: absolute;
+    right: -6.1%;
+    top: -6%;
+  }
+}
+
+@media (max-width: 992px) {
+  
+  .pin-address {
+    font-size: clamp(11px, 2vw, 18px);
+  }
+  .pin-one-address {
+    left: 3.9%;
+    top: -20%;
+  }
+  .pin-two-address {
+    left: 30.9%;
+    top: -71%;
+  }
+  .pin-three-address {
+    left: 45.9%;
+    top: -53%;
+  }
+  .pin-four-address {
+    right: 13.5%;
+    top: -39%;
+  }
+  .pin-five-address {
+    right: -3.1%;
+    top: -26%;
+  }
+}

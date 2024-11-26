@@ -127,12 +127,63 @@
             MSH <span class="redish location-head-banner ms-2">Locations</span>
           </h1>
         </div>
+  
         <div
-          class="text-center d-flex flex-column align-items-center justify-content-center"
+          class="text-center d-flex flex-column align-items-center mt-4 justify-content-center"
         >
-          <div class="col-lg-11 msh-location-banner">
+          <div class="col-lg-11 msh-location-banner position-relative">
+            <!-- pin one -->
+            <a class="pin pin-one" href="#address-1">
+              <img class="" src="./images/Pin.png" alt="" />
+            </a>
+            <h3 class="pin-one-address text-center">
+              1624 1st Ave,<br />
+              NY, 10023
+            </h3>
+
+            <!-- pin two -->
+            <a class="pin pin-two" href="#address-2">
+              <img  src="./images/Pin.png" alt="" />
+            </a>
+            <h3 class="pin-two-address pin-address text-center">
+              1616 1st Ave, <br />
+              NY, 10028
+            </h3>
+
+            <!-- pin three -->
+            <a class="pin pin-three" href="#address-3">
+              <img   src="./images/Pin.png" alt="" />
+            </a>
+            <h3 class="pin-three-address pin-address text-center">
+              1456 1st Ave, <br />
+              NY, 10021
+            </h3>
+
+            <!-- pin four -->
+            <a class="pin pin-four" href="#address-4">
+              <img   src="./images/Pin.png" alt="" />
+            </a>
+            <h3 class="pin-four-address pin-address text-center">
+              1538 2nd Ave, <br />
+              NY, 10028
+            </h3>
+
+            <!-- pin five -->
+
+            <a class="pin pin-five" href="#address-5">
+              <img  src="./images/Pin.png" alt="" />
+            </a>
+            <h3 class="pin-five-address pin-address text-center">
+              507 Chelsea <br />
+              N, 10001
+            </h3>
+
+            <img src="./images/Line.png" width="100%" height="auto" alt="" />
+          </div>
+          <div class="col-lg-11 msh-location-banner mt-0">
             <img
-              src="./images/msh-banner.png"
+              class=" red-border"
+              src="./images/Building.png"
               width="100%"
               height="auto"
               alt=""
@@ -142,8 +193,8 @@
       </div>
     </div>
 
-    <div class="d-flex justify-content-center align-items-center mt-5">
-      <div class="location-container">
+    <div class="d-flex justify-content-center align-items-center mt-5 pt-3">
+      <div class="location-container" id="address-1">
         <div
           class="location-border shadow bg-white rounded-5 d-flex justify-content-center"
         >
@@ -189,7 +240,7 @@
     </div>
 
     <div class="d-flex justify-content-center align-items-center mt-5">
-      <div class="location-container">
+      <div class="location-container" id="address-2">
         <div
           class="location-border shadow bg-white rounded-5 d-flex justify-content-center"
         >
@@ -234,7 +285,7 @@
       </div>
     </div>
     <div class="d-flex justify-content-center align-items-center mt-5">
-      <div class="location-container">
+      <div class="location-container" id="address-3">
         <div
           class="location-border shadow bg-white rounded-5 d-flex justify-content-center"
         >
@@ -280,7 +331,7 @@
     </div>
 
     <div class="d-flex justify-content-center align-items-center mt-5">
-      <div class="location-container">
+      <div class="location-container" id="address-5">
         <div
           class="location-border shadow bg-white rounded-5 d-flex justify-content-center"
         >
@@ -326,7 +377,7 @@
     </div>
 
     <div class="d-flex justify-content-center align-items-center mt-5">
-      <div class="location-container">
+      <div class="location-container" id="address-4">
         <div
           class="location-border shadow bg-white rounded-5 d-flex justify-content-center"
         >
@@ -467,5 +518,31 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const pins = document.querySelectorAll(".pin");
+        const locationContainers = document.querySelectorAll(
+          ".location-container"
+        );
+
+        pins.forEach((pin) => {
+          pin.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            locationContainers.forEach((container) => {
+              container.classList.remove("active-location");
+            });
+
+            const targetId = pin.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+              targetSection.classList.add("active-location");
+              targetSection.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
